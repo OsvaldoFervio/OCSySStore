@@ -4,12 +4,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Bienvenido a CodeIgniter</title>
+	<title>Productos enviados</title>
 
 </head>
 <body>
 
-	<h1><?php echo $titulo; ?></h1>
+	<h1><?php echo $title; ?></h1>
 
 </body>
 </html>
