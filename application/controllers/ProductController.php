@@ -1,21 +1,21 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class BD_Practicas extends CI_Controller {
+class ProductController extends CI_Controller {
 
 	public function __construct(){
 		parent::__construct();
-		$this->load->model("bd_practicasModel");
+		$this->load->model("productModel");
 		$this->load->helper(array('form', 'url'));
 	}
 
 	public function index()
 	{
-		$info ["titulo"] = "Registro de datos electronicos";
-		$this->load->view('bd_practicas/index', $info);
+		$info ["title"] = "Registro de datos electronicos";
+		$this->load->view('products/Index', $info);
 	}
 
-	public function guardar(){
+	public function SaveProduct(){
 		$codigo = $this->input->post("Code"); //$_POST
 		$description = $this->input->post("Description");
 		$section = $this->input->post("SectionId");
@@ -28,18 +28,18 @@ class BD_Practicas extends CI_Controller {
 		$currency = $this->input->post("CurrencyId");
 
 
-		$resultado = $this->bd_practicasModel->guardado($codigo, $description, $section, $brand, $line, $serie, $status, $stock, $price, $currency);
+		$result = $this->productModel->Saved($codigo, $description, $section, $brand, $line, $serie, $status, $stock, $price, $currency);
 
-		if($resultado){
-			redirect("bd_practicas/correcto");
+		if($result){
+			redirect("productcontroller/Success");
 		} else {
 			$this->index();
 		}
 	}
 
-	public function correcto()
+	public function Success()
 	{
-		$info ["titulo"] = "Datos enviados";
-		$this->load->view('bd_practicas/correcto', $info);
+		$info ["title"] = "Datos enviados";
+		$this->load->view('products/Success', $info);
 	}
 }

@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Empresa en CodeIgniter</title>
+	<title>Empresa de productos</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -21,8 +21,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </form>-->
 
     <div class="container">
-  <h2><?php echo $titulo; ?></h2>
-  <form id="bd_practicas" name="bd_practicas" method="post" action="<?php echo base_url(); ?>index.php/bd_practicas/guardar">
+  <h2><?php echo $title; ?></h2>
+  <form id="productcontroller" name="productcontroller" method="post" action="<?php echo base_url(); ?>index.php/productcontroller/SaveProduct">
     <div class="form-group">
       <label for="text">Codigo:</label>
       <input type="text" class="form-control" placeholder="Agrega un codigo al producto" name="Code">
