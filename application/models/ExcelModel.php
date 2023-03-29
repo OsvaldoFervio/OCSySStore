@@ -4,8 +4,10 @@ class ExcelModel extends CI_Model {
     parent::__construct();
     $this->load->database();
   }
-  function save_products($data) {
-    $this->db->insert_batch('products', $data);
-  }
+    public function insertar_producto($datos) {
+        $this->db->insert('products', $datos);
+        $producto_id = $this->db->insert_id();
+        return $producto_id;
+    }
 }
 ?>
