@@ -1,18 +1,34 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class ProductController extends CI_Controller {
-
+class Store extends CI_Controller {
 	public function __construct(){
 		parent::__construct();
-		$this->load->model("productModel");
+		$this->load->model(array('ProductModel'));
 		$this->load->helper(array('form', 'url'));
 	}
 
 	public function index()
 	{
-		$info ["title"] = "Registro de datos electronicos";
-		$this->load->view('products/Index', $info);
+		$data  = $this->ProductModel->GetProducts();
+		
+		$totals = $this->ProductModel->GetTotalsProducts();
+		//var_dump($data);
+		$view= $this->load->view('Store/Index',array('data'=>$data,'totals' => $totals ),TRUE);	
+		
+		$this->getTemplate($view);
+
+	}
+
+	public function getTemplate($view){
+		$data = array(
+			'head' => $this->load->view('include_files/head','',TRUE),	
+			'leftnav' => $this->load->view('include_files/leftnav','',TRUE),
+			'nav' => $this->load->view('include_files/nav','',TRUE),
+			'content' => $view,
+			'footer' => $this->load->view('include_files/footer','',TRUE),
+		);
+		$this->load->view('store',$data);
 	}
 
 	public function SaveProduct(){
