@@ -16,8 +16,7 @@
 			<li><a href="#" data-nav-section="about"><span>Nosotros</span></a></li>
 			<li><a href="#" data-nav-section="alianza"><span>Clientes</span></a></li>					
             <li><a href="#" data-nav-section="contact"><span>Contáctanos</span></a></li>
-             <li><?php echo anchor('store', 'Store', array('target' => '_blank')); ?></li>
-             <li><a onclick="Open();">Store</a></li>
+             <li><a onclick="Open();"><span>Store</span></a></li>
              <!--<li><a href="http://localhost/OCSySStore/Index.php/store">tore</a></li>-->
           </ul>
         </div>
@@ -25,8 +24,8 @@
 	  <!-- </div> -->
   </div>
   <script>
-    var open = function () {
-      window.open('http://localhost/OCSySStore/Index.php/store')
+    var Open = function () {
+      window.open('http://localhost/OCSySStore/Index.php/store');
     }
   </script>
 </header>
