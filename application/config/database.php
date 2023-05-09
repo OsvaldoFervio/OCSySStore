@@ -75,18 +75,43 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
-	'database' => 'bd_practicas',
+	'hostname' => 'db5012875032.hosting-data.io',
+	'username' => 'dbu5045296',
+	'password' => 'OcsysStore',
+	'database' => 'dbs10811954',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
 	'db_debug' => (ENVIRONMENT !== 'production'),
 	'cache_on' => FALSE,
 	'cachedir' => '',
-	'char_set' => 'utf8',
-	'dbcollat' => 'utf8_general_ci',
+	'char_set' => 'utf8mb4',
+	'dbcollat' => 'utf8mb4_spanish_ci',
+	'swap_pre' => '',
+	'encrypt' => FALSE,
+	'compress' => FALSE,
+	'stricton' => FALSE,
+	'failover' => array(),
+	'save_queries' => TRUE
+);
+
+
+
+
+$db['dev'] = array(
+	'dsn'	=> '',
+	'hostname' => '162.241.61.145',
+	'username' => 'ocsysmx_store',
+	'password' => 'BQln#FOM*[mj',
+	'database' => 'ocsysmx_Store',
+	'dbdriver' => 'mysqli',
+	'dbprefix' => '',
+	'pconnect' => FALSE,
+	'db_debug' => (ENVIRONMENT !== 'production'),
+	'cache_on' => FALSE,
+	'cachedir' => '',
+	'char_set' => 'utf8mb4',
+	'dbcollat' => 'utf8mb4_spanish_ci',
 	'swap_pre' => '',
 	'encrypt' => FALSE,
 	'compress' => FALSE,
