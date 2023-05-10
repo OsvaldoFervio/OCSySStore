@@ -11,7 +11,14 @@ class Store extends CI_Controller {
 	public function index()
 	{
 		$data  = $this->ProductModel->GetProducts();
-		
+
+		$brandS = $this->BrandModel->GetCatalogBranches();
+		$linesS = $this->LineModel->GetCatalogLines();
+		$serieS = $this->SerieModel->GetCatalogSeries();
+		$statusS = $this->StatusModel->GetCatalogStatus();
+		$currencyS = $this->CurrencyModel->SelectCurrency();
+
+		var_dump($brandS);
 		$totals = $this->ProductModel->GetTotalsProducts();
 		//var_dump($data);
 		$view= $this->load->view('Store/Index',array('data'=>$data,'totals' => $totals ),TRUE);	
@@ -53,6 +60,27 @@ class Store extends CI_Controller {
 			$this->index();
 		}
 	}
+
+	public function GetCatalogBranches(){
+		$brandS = $this->BrandModel->GetCatalogBranches();
+	}	
+
+	public function GetCatalogLines(){
+		$linesS = $this->LineModel->GetCatalogLines();
+	}
+
+	public function GetCatalogSeries(){
+		$serieS = $this->SerieModel->GetCatalogSeries();
+	}	
+
+	public function GetCatalogStatus(){
+		$statusS = $this->StatusModel->GetCatalogStatus();
+	}
+
+	public function GetCatalogCurrency(){
+		$currencyS = $this->CurrencyModel->GetCatalogCurrency();
+	}	
+
 
 	public function Success()
 	{
