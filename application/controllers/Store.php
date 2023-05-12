@@ -4,21 +4,28 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Store extends CI_Controller {
 	public function __construct(){
 		parent::__construct();
-		$this->load->model(array('ProductModel'));
+	$this->load->model(array('ProductModel','BrandModel','LineModel',
+		'SerieModel',
+		'StatusModel',
+		'CurrencyModel',
+		'SectionModel'));
 		$this->load->helper(array('form', 'url'));
 	}
 
 	public function index()
 	{
+
 		$data  = $this->ProductModel->GetProducts();
 
-		$brandS = $this->BrandModel->GetCatalogBranches();
-		$linesS = $this->LineModel->GetCatalogLines();
-		$serieS = $this->SerieModel->GetCatalogSeries();
-		$statusS = $this->StatusModel->GetCatalogStatus();
-		$currencyS = $this->CurrencyModel->SelectCurrency();
+		$section = $this->SectionModel->GetCatalogSections();
+		$brands = $this->BrandModel->GetCatalogBrands();
+		$lines = $this->LineModel->GetCatalogLines();
+		$series = $this->SerieModel->GetCatalogSeries();
+		$status = $this->StatusModel->GetCatalogStatus();
+		$currencies = $this->CurrencyModel->GetCatalogCurrencies();
+		
 
-		var_dump($brandS);
+		
 		$totals = $this->ProductModel->GetTotalsProducts();
 		//var_dump($data);
 		$view= $this->load->view('Store/Index',array('data'=>$data,'totals' => $totals ),TRUE);	
@@ -37,6 +44,25 @@ class Store extends CI_Controller {
 			'footer' => $this->load->view('include_files/footer','',TRUE),
 		);
 		$this->load->view('store',$data);
+	}
+
+	public function CreateProduct()
+	{
+		$sections = $this->SectionModel->GetCatalogSections();
+		$brands = $this->BrandModel->GetCatalogBrands();		
+		$lines = $this->LineModel->GetCatalogLines();
+		$series = $this->SerieModel->GetCatalogSeries();
+		$status = $this->StatusModel->GetCatalogStatus();
+		$currencies = $this->CurrencyModel->GetCatalogCurrencies();
+
+		$view= $this->load->view('Store/Create',['sections' => $sections, 
+			'brands' => $brands, 
+			'lines' => $lines,
+			'series' => $series,
+			'status' => $status,
+			'currencies' => $currencies,
+			 ], TRUE);	
+		$this->getTemplate($view);	
 	}
 
 	public function SaveProduct(){

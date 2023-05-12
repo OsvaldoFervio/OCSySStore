@@ -23,12 +23,12 @@
             st.Description as Status, 
             p.*'
         );
-        $this->db->from('products p');
-        $this->db->join('sections s', 'p.SectionId = s.SectionId');
-        $this->db->join('brands b', 'p.BrandId = b.BrandId');
-        $this->db->join('lines l', 'p.LineId = l.LineId');
-        $this->db->join('series se', 'p.SerieId = se.SerieId');
-        $this->db->join('status st', 'p.StatusId = st.StatusId');
+        $this->db->from('Products p');
+        $this->db->join('Sections s', 'p.SectionId = s.SectionId');
+        $this->db->join('Brands b', 'p.BrandId = b.BrandId');
+        $this->db->join('Lines l', 'p.LineId = l.LineId');
+        $this->db->join('Series se', 'p.SerieId = se.SerieId');
+        $this->db->join('Status st', 'p.StatusId = st.StatusId');
         
         $query = $this->db->get();        
         $query=  $query->result();      
@@ -45,7 +45,7 @@
 
         public function GetUsdExchangeRate()
         {
-            $this->rate = $this->db->query('SELECT Rate  FROM currencyid WHERE CurrencyId = 1;')->row()->Rate;
+            $this->rate = $this->db->query('SELECT Rate  FROM Currencies WHERE CurrencyId = 1;')->row()->Rate;
     
         }
 
@@ -56,7 +56,7 @@
             sum(1) as Cost,
             sum(1) as Tax,
             sum(1) as Total
-            FROM products"; 
+            FROM Products"; 
             $query = $this->db->query($sql);
 
             return $query->row();

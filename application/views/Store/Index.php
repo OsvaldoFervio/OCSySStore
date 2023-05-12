@@ -36,7 +36,7 @@
         <div class="x_panel">
           <div class="x_title">
             <div class="col-md-6">
-              <h3>Registro <small> Estudios</small></h3>
+              <h3>Registro <small> Productos</small></h3>
             </div>
             <div class="col-md-6">
             <ul class="nav navbar-right panel_toolbox">
@@ -51,17 +51,7 @@
           <div class="x_content">
             <div class="row">
               <div class="col-sm-12">
-                <div class="card-box table-responsive">
-                  <table cellspacing="5" cellpadding="5">
-                    <tbody>
-                      <tr>
-                        <td>Desde:</td>
-                        <td><input type="text" class="form-control" id="min" name="min"></td>
-                        <td>Hasta:</td>
-                        <td><input type="text" class="form-control" id="max" name="max"></td>
-                      </tr>                     
-                    </tbody>
-                  </table>
+                <div class="card-box table-responsive">                  
                   <table id="datatable-buttons" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">
                     <thead>
                       <tr>                        

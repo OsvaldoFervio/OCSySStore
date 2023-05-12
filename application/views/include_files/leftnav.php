@@ -29,7 +29,7 @@
                 <ul class="nav side-menu">
                   <li><a><i class="fa fa-home"></i> Inicio <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="<?= base_url('Dashboard') ?>">Registro</a></li>
+                      <li><a href="<?= base_url('Store') ?>">Productos</a></li>
                       <li><a href="<?= base_url('Dashboard/ListProducts') ?>">Estudios</a></li>
                       <li><a href="<?= base_url('Dashboard/ListDoctors') ?>">Doctores</a></li>
                       
@@ -38,7 +38,7 @@
                   </li>
                   <li><a><i class="fa fa-edit"></i> Formularios <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="<?= base_url('Dashboard/CreateProduct')?>">Estudios</a></li>
+                      <li><a href="<?= base_url('Store/CreateProduct')?>">Crear Producto</a></li>
                       <li><a href="<?= base_url('Dashboard/CreateDoctor')?>">Doctores</a></li>
                       <li><a href="<?= base_url('Dashboard/CreateClinicalStudy')?>">Estudio Clinico</a></li>
                     </ul>
