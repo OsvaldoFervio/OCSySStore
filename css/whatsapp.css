@@ -1,0 +1,25 @@
+.whatsapp{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#075E54;
+	color:#fff;
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+	box-shadow: 2px 2px 3px #f0f0f0;
+    z-index:100;
+}
+.whatsapp:hover {
+	text-decoration: none;
+	color: #075E54;
+    background-color:#fff;
+}
+.whatsapp:focus{
+    color: #fff;
+}
+.my-whatsapp{
+	margin-top:16px;
+}
