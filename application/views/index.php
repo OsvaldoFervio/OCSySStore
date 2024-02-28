@@ -39,13 +39,13 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-3 col-sm-3 fh5co-service to-animate text-center">
+        <div class="col-md-4 col-sm-4 fh5co-service to-animate text-center">
           <img src="images/icon/desarrollo-web.webp">
           <h3>Desarrollo de Web</h3>
           <p>Sistemas para todas las personas que quieran estar en Internet</p>
           <button onclick="document.location=''">Ver más</button>
         </div>
-        <div class="col-md-3 col-sm-3 fh5co-service to-animate text-center">
+        <div class="col-md-4 col-sm-4 fh5co-service to-animate text-center">
           <img src="images/icon/desarrollo-movil.webp">
           <h3>Desarrollo Móvil</h3>
           <p>¿Quieres emprender? entonces una app movil te ayudaría a vender y crecer</p>
@@ -54,18 +54,18 @@
 
         <div class="clearfix visible-sm-block"></div>
 
-        <div class="col-md-3 col-sm-3 fh5co-service to-animate text-center">
+        <div class="col-md-4 col-sm-4 fh5co-service to-animate text-center">
           <img src="images/icon/desarrollo-empresarial.webp">
           <h3>Desarollo Empresarial</h3>
           <p>Sistemas rudimentarios para negocios que desean tener el control total</p>
           <button onclick="document.location=''">Ver más</button>
         </div>
-        <div class="col-md-3 col-sm-3 fh5co-service to-animate text-center">
+       <!--  <div class="col-md-3 col-sm-3 fh5co-service to-animate text-center">
           <img src="images/icon/impresion-3d.webp">
           <h3>Impresion 3D</h3>
           <p>Imprimimos tus ideas en tercera dimensión</p>
           <button onclick="document.location=''">Ver más</button>
-        </div>
+        </div> -->
         
       </div>
     </div>
@@ -125,14 +125,14 @@
   </section>
 
 
-  <section id="fh5co-work" data-section="work">
+  <!-- <section id="fh5co-work" data-section="work">
     <div class="container">
       <div class="row">
         <div class="col-md-12  text-center">
           <h2 class="to-animate">Productos</h2>
           <div class="row">
             <div class="col-md-8 col-md-offset-2  to-animate">
-              <h3>Descubre nuestras oluciones a la medida:</h3>
+              <h3>Descubre nuestras soluciones a la medida:</h3>
             </div>
           </div>
         </div>
@@ -200,7 +200,7 @@
             </div>
             
         </div>
-    </section>
+    </section> -->
     
   <section id="fh5co-about" data-section="about">
     <div class="container">
@@ -221,7 +221,7 @@
             <h3>Osvaldo Fdez.</h3>
             <span class="fh5co-position">CEO, Cofundador Director General</span>
             <hr>
-            <p>Más de 6 años de experiencia en desarrollo de software full stack, Lider, Gestor de proyectos y emprendedor.</p>
+            <p>Más de 8 años de experiencia en desarrollo de software full stack, Lider, Gestor de proyectos y emprendedor.</p>
           </div>
         </div>
         <div class="col-md-4">
@@ -230,55 +230,63 @@
             <h3>Carlos P. Vargas</h3>
             <span class="fh5co-position">CEO, Co-fundador Director de Software</span>
             <hr>
-            <p>Más de 6 años de experiencia en desarrollo de Software e Internet de las cosas.</p>
+            <p>Más de 8 años de experiencia en desarrollo de Software e Internet de las cosas.</p>
             
           </div>
         </div>
+        <div class="col-md-4">
+          <div class="fh5co-person text-center to-animate">
+            <figure><img src="images/person7.webp" alt="Image"></figure>
+            <h3>José Rivera</h3>
+            <span class="fh5co-position">Gerente Tecnología y Servicios TI</span>
+            <hr>
+            <p>Más de 8 años de experiencia en el sector de Tecnología, Servicios de TI, soporte, mantenimiento y capacitación técnica.</p>            
+          </div>
+        </div>        
+      </div>
+      <div class="row" style="margin-top: 100px">
         <div class="col-md-4">
           <div class="fh5co-person text-center to-animate">
             <figure><img src="images/person4.webp" alt="Image"></figure>
             <h3>Antonio Nava</h3>
             <span class="fh5co-position">Especialista en Inteligencia Geoespacial</span>
             <hr>
-            <p>Más de 25 años de experiencia en integración de proyectos de tecnología, inteligencia geospacial y análisis de datos.</p>
-            
+            <p>Más de 25 años de experiencia en integración de proyectos de tecnología, inteligencia geospacial y análisis de datos.</p>            
           </div>
         </div>
-      </div>
-      <div class="row" style="margin-top: 100px">
         <div class="col-md-4">
           <div class="fh5co-person text-center to-animate">
             <figure><img src="images/person5.webp" alt="Image"></figure>
             <h3>Lizeth Alvarado</h3>
             <span class="fh5co-position">Project Manager</span>
             <hr>
-            <p>Más de 6 años de experiencia en gestión, planificación, software para colaboración, manejo de la calidad y documentación de sistemas.</p>
+            <p>Más de 8 años de experiencia en gestión, planificación, software para colaboración, manejo de la calidad y documentación de sistemas.</p>
             
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="fh5co-person text-center to-animate">
-            <figure><img src="images/person6.webp" alt="Image"></figure>
-            <h3>Leopoldo López</h3>
-            <span class="fh5co-position">Desarrollador de Software</span>
-            <hr>
-            <p>Desarrollador con más de 6 de años de experiencia creando sistemas que ofrecen soluciones de gran impacto dando valor a los clientes.</p>
-            
-          </div>
-        </div>
+        </div>    
         <div class="col-md-4">
           <div class="fh5co-person text-center to-animate">
             <figure><img src="images/person1.webp" alt="Image"></figure>
             <h3>Fernanda González</h3>
             <span class="fh5co-position">Marketing y Diseño</span>
             <hr>
-            <p>Más de 5 años de experiencia en diseño, branding de marcas, marketing digital y comercial.</p>
-            
+            <p>Más de 7 años de experiencia en diseño, branding de marcas, marketing digital y comercial.</p>            
           </div>
         </div>
       </div>
+      <div class="row" style="margin-top: 100px">
+        <div class="col-md-4">
+          <div class="fh5co-person text-center to-animate">
+            <figure><img src="images/person6.webp" alt="Image"></figure>
+            <h3>Leopoldo López</h3>
+            <span class="fh5co-position">Desarrollador de Software</span>
+            <hr>
+            <p>Desarrollador con más de 7 de años de experiencia creando sistemas que ofrecen soluciones de gran impacto dando valor a los clientes.</p>            
+          </div>
+        </div>        
+      </div>
     </div>
-  </section>  
+  </section>    
   
   <section id="fh5co-counters" style="background-image: url(images/full_image_1.webp);" data-stellar-background-ratio="0.5">
     <div class="ocsys-overlay"></div>
@@ -341,28 +349,36 @@
     </div>
     <div class="row row-bottom-padded-lg row-center-padded">
       <div class="fh5co-clients to-animate">
-        <img src="images/SIGMA.webp">
-        <h2>SIGMA</h2>
-        <P>Soluciones de vanguardia en software y hardware de seguridad.</P>
+        <img src="images/xela.webp">
+        <h2>XELA</h2>
+        <P>Especialistas en servicio, instalación y mantenimiento a equipos de cómputo.</P>
         <button onclick="document.location=''">Ver más</button>
       </div>
-  </div>
-  <div class="row row-bottom-padded-lg row-center-padded">
-    <div class="fh5co-clients to-animate">
-      <img src="images/Modana.webp">
-      <h2>Modana</h2>
-      <P>Venta en menudeo y mayoreo de Jeans.</P>
-      <button onclick="document.location=''">Ver más</button>
     </div>
-</div>
-<div class="row row-bottom-padded-lg row-center-padded">
-  <div class="fh5co-clients to-animate">
-    <img src="images/ScionEsports.webp">
-    <h2>eSports</h2>
-    <P>Organización de eventos relacionados al mundo del Gaming y los eSports.</P>
-    <button onclick="document.location=''">Ver más</button>
-  </div>
-  </div>
+    <div class="row row-bottom-padded-lg row-center-padded">
+      <div class="fh5co-clients to-animate">
+        <img src="images/Modana.webp">
+        <h2>Modana</h2>
+        <P>Venta en menudeo y mayoreo de Jeans.</P>
+        <button onclick="document.location=''">Ver más</button>
+      </div>
+    </div>
+    <div class="row row-bottom-padded-lg row-center-padded">
+      <div class="fh5co-clients to-animate">
+        <img src="images/Vidana.webp">
+        <h2>Vidana</h2>
+        <P>Repostería Fina y Panadería Gourmet.</P>
+        <button onclick="document.location=''">Ver más</button>
+      </div>
+    </div>
+    <div class="row row-bottom-padded-lg row-center-padded">
+      <div class="fh5co-clients to-animate">
+        <img src="images/SanAngel.webp">
+        <h2>San Angel Oftalmología</h2>
+        <P>Clinica Oftalmológica.</P>
+        <button onclick="document.location=''">Ver más</button>
+      </div>
+    </div>
   </div>
   </section>
 

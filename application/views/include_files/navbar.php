@@ -10,14 +10,13 @@
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <li class="active"><a href="#" data-nav-section="home"><span>Inicio</span></a></li>
-			<li><a href="#" data-nav-section="services"><span>Soluciones</span></a></li>
-			<li><a href="#" data-nav-section="testimonials"><span>Motívate</span></a></li>
-            <li><a href="#" data-nav-section="work"><span>Productos</span></a></li>
-			<li><a href="#" data-nav-section="about"><span>Nosotros</span></a></li>
-			<li><a href="#" data-nav-section="alianza"><span>Clientes</span></a></li>					
+            <li><a href="#" data-nav-section="services"><span>Soluciones</span></a></li>
+            <li><a href="#" data-nav-section="testimonials"><span>Motívate</span></a></li>
+            <!-- <li><a href="#" data-nav-section="work"><span>Productos</span></a></li> -->
+      			<li><a href="#" data-nav-section="about"><span>Nosotros</span></a></li>
+      			<li><a href="#" data-nav-section="alianza"><span>Clientes</span></a></li>					
             <li><a href="#" data-nav-section="contact"><span>Contáctanos</span></a></li>
-             <li><a onclick="Open();"><span>Store</span></a></li>
-             <!--<li><a href="http://localhost/OCSySStore/Index.php/store">tore</a></li>-->
+            <li><a onclick="Open();"><span>Store</span></a></li>
           </ul>
         </div>
 	    </nav>

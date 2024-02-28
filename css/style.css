@@ -579,11 +579,11 @@ a:hover, a:active {
   font-family: 'Comfortaa';
   font-weight: 600;
 }
-#fh5co-services .col-md-3 h3{
+#fh5co-services h3{
   color: #0d213c;
   font-weight: bold;
 }
-#fh5co-services .col-md-3 p{
+#fh5co-services p{
   color: #000;
   font-weight:bolder;
   padding-bottom: 5px;
@@ -598,10 +598,10 @@ a:hover, a:active {
   padding: 0;
   width: 101%;
 }
-#fh5co-services .col-md-3 img{
+#fh5co-services img{
   height: 80px;
 }
-#fh5co-services .col-md-3 button{
+#fh5co-services button{
 background-color: #5652e4;
 color: white;
 border: none;
